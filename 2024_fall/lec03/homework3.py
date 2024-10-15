@@ -9,7 +9,7 @@ def cancellation(list, stop_word):
     output_list = []
     for x in list:
         if x == stop_word:
-        break
+            break
         output_list.append(x)
     return output_list
 
