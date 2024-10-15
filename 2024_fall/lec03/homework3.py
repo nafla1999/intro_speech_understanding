@@ -24,7 +24,7 @@ def copy_all_but_skip_word(input_list, skip_word):
         if x ==skip_word:
             continue
         output_list.append(x)
-        return output_list
+    return output_list
 
 def my_average(input_list):
     '''
