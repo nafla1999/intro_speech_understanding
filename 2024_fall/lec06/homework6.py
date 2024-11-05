@@ -40,6 +40,6 @@ def pure_tone(omega, N):
     x (array): N samples from the signal cos(omega*n)
     '''
     n = np.arange(N)
-    x = np.cos( omega *m ) # change this line
+    x = np.cos( omega * n ) # change this line
     return x
 
