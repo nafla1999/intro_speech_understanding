@@ -32,7 +32,6 @@ def resonator(x, F, BW, Fs):
     @returns:
     y (np.ndarray(N)) - resonant output
     '''
-    def resonator(x, F, BW, Fs):
     C = -np.exp(-2*np.pi*BW/Fs)
     B = 2 * np.exp(-np.pi*BW/Fs) * np.cos(2*np.pi*F/Fs)
     A = 1 - B - C
@@ -41,7 +40,6 @@ def resonator(x, F, BW, Fs):
     y[1] = A*x[1] + B*y[0]
     for n in range(2,len(y)):
         y[n] = A*x[n] + B*y[n-1] + C*y[n-2]
-    pass # change this
     return y
 
 def synthesize_vowel(duration,F0,F1,F2,F3,F4,BW1,BW2,BW3,BW4,Fs):
