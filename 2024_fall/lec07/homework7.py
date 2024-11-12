@@ -40,7 +40,7 @@ def resonator(x, F, BW, Fs):
     y[1] = A*x[1] + B*y[0]
     for n in range(2,len(y)):
         y[n] = A*x[n] + B*y[n-1] + C*y[n-2]
-    return y1
+    return y
 
 def synthesize_vowel(duration,F0,F1,F2,F3,F4,BW1,BW2,BW3,BW4,Fs):
     '''
